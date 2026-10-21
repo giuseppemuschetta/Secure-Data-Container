@@ -1,4 +1,4 @@
-// GIUSEPPE MUSCHETTA, matricola 564026, corso A, prof. Ferrari
+// GIUSEPPE MUSCHETTA, corso A, prof. Ferrari
 
 package com.company;
 
