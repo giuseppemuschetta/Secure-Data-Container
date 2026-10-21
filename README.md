@@ -44,7 +44,7 @@ The type is written **specification first**: the interface documents every opera
 | **Access control** | `share` grants another registered user access to an item. The recipient can read it, copy it, or drop it for themselves, but never delete it for the owner. |
 | **First-owner semantics** | When the first owner removes an item, every copy they shared disappears with it. When a user removes something that was shared with them, only their own access goes. |
 | **Cascading deletion** | `removeUser` and `clear` remove a user's data together with every copy they shared with others. |
-| **Two representations** | One implementation keeps a single list of all items, each labelled with owner and first owner; the other keeps one list per user. Both document their **abstraction function** and **representation invariant**. |
+| **Two representations** | One implementation keeps a single list of all items, each labeled with owner and first owner; the other keeps one list per user. Both document their **abstraction function** and **representation invariant**. |
 | **Read-only iteration** | `getIterator` returns an iterator over the caller's items only; `remove()` throws `UnsupportedOperationException`. |
 | **Generic and defensive** | Works for any element type `E` through its `equals`. Null arguments throw `NullPointerException` (unchecked); domain errors use checked exceptions. |
 
@@ -102,7 +102,7 @@ Every stored item knows who inserted it. That single label, the **first owner**,
 | `put(owner, passw, data)` | Inserts `data`; the caller becomes its first owner. |
 | `share(owner, passw, other, data)` | Gives `other` access to a copy of `data`; the first owner does not change. |
 | `get(owner, passw, data)` | Returns the item, if the caller has access to it. |
-| `copy(owner, passw, data)` | Adds another copy to the caller's items, still labelled with the original first owner. |
+| `copy(owner, passw, data)` | Adds another copy to the caller's items, still labeled with the original first owner. |
 | `remove(owner, passw, data)` | First owner: deletes the item and every copy shared with others. Anyone else: removes only their own access. |
 | `removeUser(id, passw)` | Deletes the user, their data and every copy of their data held by others. |
 
