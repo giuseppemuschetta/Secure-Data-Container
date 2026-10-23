@@ -19,7 +19,7 @@
 
 **1 interface · 2 implementations · 18 specified operations · 3 checked exceptions of its own · no external libraries**
 
-[Read the report (Italian)](primoProgRELAZIONE.pdf) · [Design](#design) · [Get it running](#getting-started)
+[Read the report](REPORT.pdf) · [Italian version](primoProgRELAZIONE.pdf) · [Design](#design) · [Get it running](#getting-started)
 
 </div>
 
@@ -186,7 +186,8 @@ public class Example {
 | [`ExistingUserException.java`](ExistingUserException.java), [`UserNotFoundException.java`](UserNotFoundException.java), [`DataNotFoundException.java`](DataNotFoundException.java) | The checked exceptions of the type |
 | [`Esame.java`](Esame.java) | An immutable exam record, used as test data |
 | [`Main.java`](Main.java) | The test scenario for both implementations |
-| [`primoProgRELAZIONE.pdf`](primoProgRELAZIONE.pdf) | The project report, in Italian |
+| [`REPORT.pdf`](REPORT.pdf) | The project report, in English: the specification, both representations with their abstraction functions and invariants, and the test results |
+| [`primoProgRELAZIONE.pdf`](primoProgRELAZIONE.pdf) | The original project report, in Italian |
 
 ## License
 
